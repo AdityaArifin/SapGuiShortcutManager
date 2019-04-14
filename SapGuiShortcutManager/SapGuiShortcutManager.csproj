@@ -77,9 +77,10 @@
     <Compile Include="GUI\Panel.xaml.cs">
       <DependentUpon>Panel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\SapGuiShortcutTree.cs" />
     <Compile Include="Model\FileReader.cs" />
-    <Compile Include="Model\SapGuiShortcuts.cs" />
-    <Compile Include="Model\SapGuiServices.cs" />
+    <Compile Include="Model\SapGuiShortcut.cs" />
+    <Compile Include="Model\SapGuiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

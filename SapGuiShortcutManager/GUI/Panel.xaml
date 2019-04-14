@@ -11,22 +11,18 @@
         <tree:TreeList.View>
             <GridView>
                 <GridView.Columns>
-
-                    <GridViewColumn Width="400" Header="Name">
+                    <GridViewColumn Width="200" Header="System Name">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <tree:RowExpander/>
-                                    <Image Source="{Binding Converter={StaticResource RegImageConverter}}"  Margin="0, 0, 5, 0"/>
-                                    <TextBlock Text="{Binding Name}"></TextBlock>
+                                    <TextBlock Text="{Binding SystemName}"></TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-
-                    <GridViewColumn Header="Type" Width="50" DisplayMemberBinding="{Binding Kind}"/>
-                    <GridViewColumn Header="Data" Width="100" DisplayMemberBinding="{Binding Data}"/>
-
+                    <GridViewColumn Header="Client" Width="50" DisplayMemberBinding="{Binding Client}"/>
+                    <GridViewColumn Header="User Name" Width="50" DisplayMemberBinding="{Binding UserName}"/>
                 </GridView.Columns>
             </GridView>
         </tree:TreeList.View>

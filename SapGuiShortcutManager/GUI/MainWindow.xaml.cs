@@ -20,9 +20,13 @@ namespace SapGuiShortcutManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Properties
+        TabControl MTabControl { get; set; }
+        #endregion
+
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
     }
 }
